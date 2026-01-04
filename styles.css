@@ -402,3 +402,50 @@ img{ max-width:100%; display:block; }
 
   .footer__inner{ grid-template-columns: 1fr; }
 }
+.reviewSummary{
+  background: rgba(255,255,255,.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 10px 22px rgba(47,36,37,.08);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.reviewScore{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.scoreBig{
+  font-size: 22px;
+  font-weight: 950;
+  letter-spacing: .5px;
+  color: var(--wine);
+  line-height: 1;
+}
+.scoreMeta{
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.reviewCtas{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.reviewText{
+  margin:0;
+  color: var(--text);
+  font-weight: 650;
+}
+.reviewAuthor{
+  margin:10px 0 0;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 13.5px;
+}

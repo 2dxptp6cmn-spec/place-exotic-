@@ -449,3 +449,17 @@ img{ max-width:100%; display:block; }
   font-weight: 800;
   font-size: 13.5px;
 }
+:root{
+  --wine: #8d3a46;
+  --teal: #476867;
+  --spice: #c99142;
+
+  --ink: #2b2021;
+  --paper: #ffffff;
+  --bg: #fbf7f3;         /* plus chaleureux */
+  --tint: rgba(201,145,66,.10);
+
+  --line: rgba(43,32,33,.12);
+  --shadow: 0 18px 50px rgba(43,32,33,.10);
+  --radius: 18px;
+}

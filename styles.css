@@ -85,7 +85,15 @@ img{ max-width:200%; display:block; }
   border-top: 1px solid rgba(43,32,33,.08);
   border-bottom: 1px solid rgba(43,32,33,.10);
 }
-
+.header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding: 14px 0;
+  background: var(--paper-strong);
+  backdrop-filter: blur(10px);
+}
 .brand{
   display:flex;
   align-items:center;

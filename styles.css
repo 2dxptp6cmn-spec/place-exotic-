@@ -466,22 +466,6 @@ img{ max-width:100%; display:block; }
 /* =========================================================
    BANDE WAX – VERSION PRO (GRANDE + FOND HEADER)
    ========================================================= */
-
-header{
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  /* Motif wax en fond */
-  background-image: url("./assets/bande-wax.png");
-  background-repeat: repeat-x;
-  background-size: auto 80px;      /* taille du motif */
-  background-position: top center;
-
-  /* Lisibilité */
-  padding-top: 80px;               /* hauteur de la bande */
-}
-
 /* Contenu du header posé sur un fond lisible */
 header > *{
   background: rgba(251,250,248,.92);

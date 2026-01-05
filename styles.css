@@ -481,9 +481,7 @@ img{ max-width:100%; display:block; }
 .header::before{
   content: "";
   display: block;
-  height: 20px; /* hauteur idéale : visible mais élégante */
-  background-image: url("./assets/bande-wax.png");
-  background-repeat: repeat-x;     /* effet tissu */
-  background-size: auto 20px;      /* correspond à la hauteur */
-  background-position: center;
+  height: 20px;
+  background: url("./assets/bande-wax.png") repeat-x center;
+  background-size: auto 20px;
 }

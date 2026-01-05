@@ -67,6 +67,25 @@ img{ max-width:100%; display:block; }
   background: rgba(251,250,248,.82);
   border-bottom: 1px solid var(--line);
 }
+/* Bande motif sous le header */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.header::after{
+  content:"";
+  display:block;
+  height: 12px; /* épaisseur de la bande */
+  background-image: url("./assets/bande-wax.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 12px;
+  border-top: 1px solid rgba(43,32,33,.08);
+  border-bottom: 1px solid rgba(43,32,33,.10);
+}
+
 .header__inner{
   display:flex;
   align-items:center;
@@ -502,3 +521,20 @@ img{ max-width:100%; display:block; }
     height: 220px;
   }
 }
+/* Bande motif au-dessus du footer */
+.footer{
+  position: relative;
+}
+
+.footer::before{
+  content:"";
+  display:block;
+  height: 12px;
+  background-image: url("./assets/bande-wax.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 12px;
+  border-top: 1px solid rgba(43,32,33,.10);
+  border-bottom: 1px solid rgba(43,32,33,.08);
+}
+

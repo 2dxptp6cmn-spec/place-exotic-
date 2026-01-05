@@ -67,12 +67,6 @@ img{ max-width:200%; display:block; }
   background: rgba(251,250,248,.82);
   border-bottom: 1px solid var(--line);
 }
-/* Bande motif sous le header */
-.header{
-  position: sticky;
-  top: 0;
-  z-index: 200;
-}
 
 .header::after{
   content:"";

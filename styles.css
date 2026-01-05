@@ -29,7 +29,9 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: var(--ink);
   line-height: 1.6;
-  background: var(--bg);
+
+  /* Couleur de fond principale (base wax) */
+  background: #22181b;
 }
 
 /* FOND WAX GLOBAL (la vraie identité, partout) */

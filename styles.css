@@ -485,3 +485,11 @@ img{ max-width:100%; display:block; }
   background: url("./assets/bande-wax.png") repeat-x center;
   background-size: auto 20px;
 }
+/* BANDE WAX – FORCÉE (infaillible) */
+header::before{
+  content:"";
+  display:block;
+  height:20px;
+  background:url("./assets/bande-wax.png") repeat-x center;
+  background-size:auto 20px;
+}

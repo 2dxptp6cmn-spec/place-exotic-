@@ -17,16 +17,29 @@
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(900px 420px at 12% 0%, rgba(201,145,66,.18), transparent 60%),
-    radial-gradient(900px 420px at 88% 8%, rgba(141,58,70,.14), transparent 60%),
-    radial-gradient(900px 420px at 70% 95%, rgba(71,104,103,.12), transparent 60%),
-    var(--bg);
-  line-height: 1.55;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #2b2021;
+  line-height: 1.6;
+
+  /* Fond blanc */
+  background-color: #ffffff;
+
+  /* Motif discret */
+  background-image: url("./assets/motifs/wax.png");
+  background-repeat: repeat;
+  background-size: 700px auto;
+  background-position: center;
 }
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.88);
+  pointer-events: none;
+  z-index: -1;
+}
+
 
 a{ color: inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }

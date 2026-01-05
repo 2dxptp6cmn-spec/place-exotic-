@@ -537,4 +537,9 @@ img{ max-width:200%; display:block; }
   border-top: 1px solid rgba(43,32,33,.10);
   border-bottom: 1px solid rgba(43,32,33,.08);
 }
+/* Agrandir le logo */
+.brand img{
+  height: 56px;       /* valeur par défaut pro */
+  width: auto;
+}
 

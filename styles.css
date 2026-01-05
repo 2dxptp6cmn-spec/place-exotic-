@@ -533,7 +533,7 @@ img{ max-width:200%; display:block; }
 }
 /* Agrandir le logo */
 .brand img{
-  height: 56px;       /* valeur par défaut pro */
+  height: 86px;       /* valeur par défaut pro */
   width: auto;
 }
 

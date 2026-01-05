@@ -464,11 +464,65 @@ img{ max-width:100%; display:block; }
   --radius: 18px;
 }
 /* =========================================================
-   BANDE WAX – VERSION PRO (GRANDE + FOND HEADER)
+   PLACE EXOTIC — BANDE WAX (VISIBLE + FOND HEADER)
    ========================================================= */
-/* Contenu du header posé sur un fond lisible */
-header > *{
+
+/* Le header doit pouvoir contenir un pseudo-élément */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 120;
+
+  /* Fond wax derrière tout le header */
+  background-image: url("./assets/bande-wax.png");
+  background-repeat: repeat-x;
+  background-size: auto 90px;     /* taille du motif (fond) */
+  background-position: top center;
+
+  /* IMPORTANT : on ne met PAS de padding-top ici (ça casse la mise en page) */
+}
+
+/* Bande wax visible AU-DESSUS du contenu */
+.header::before{
+  content:"";
+  display:block;
+  height: 70px;                  /* hauteur de la bande visible */
+  background-image: url("./assets/bande-wax.png");
+  background-repeat: repeat-x;
+  background-size: auto 70px;
+  background-position: center;
+}
+
+/* Voile de lisibilité sur la zone “contenu” du header */
+.header::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:70px;                      /* commence juste après la bande */
+  height: 92px;                  /* couvre la zone du menu/CTA */
   background: rgba(251,250,248,.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(43,32,33,.12);
+  pointer-events:none;
+  z-index: 0;
+}
+
+/* Assure que les éléments du header passent au-dessus du voile */
+.header .header__inner,
+.header .mobile{
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile : bande un peu moins haute */
+@media (max-width: 980px){
+  .header::before{
+    height: 56px;
+    background-size: auto 56px;
+  }
+  .header::after{
+    top:56px;
+    height: 88px;
+  }
 }

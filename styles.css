@@ -525,18 +525,19 @@ img{ max-width:200%; display:block; }
   width: auto;
 }
 .menu-split{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* Images */
 .menu-split img{
   width: 100%;
+  max-width: 520px;       /* largeur confortable */
   border-radius: 16px;
   box-shadow: 0 18px 40px rgba(0,0,0,.15);
+  margin-left: auto;
 }
+
 @media (max-width: 900px){
   .menu-split{
     grid-template-columns: 1fr;

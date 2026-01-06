@@ -524,4 +524,17 @@ img{ max-width:200%; display:block; }
   height: 86px;       /* valeur par défaut pro */
   width: auto;
 }
+.menu-split{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-split img{
+  width: 100%;
+  max-width: 520px;       /* largeur confortable */
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
+  margin-left: auto;
+}
 

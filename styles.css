@@ -556,4 +556,41 @@ img{ max-width:200%; display:block; }
   height: 100%;
   border: 0;
 }
+.menuThumb{
+  position: relative;
+  display: block;
+  max-width: 520px;     /* taille “petit” sur desktop */
+  margin-left: auto;    /* aligné à droite si tu es en colonne droite */
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(43,32,33,.12);
+  box-shadow: 0 18px 40px rgba(0,0,0,.14);
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+.menuThumb img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menuThumb__hint{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  backdrop-filter: blur(6px);
+}
+
+.menuThumb:hover{
+  transform: translateY(-2px);
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 26px 60px rgba(0,0,0,.22);
+}
 

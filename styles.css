@@ -537,4 +537,9 @@ img{ max-width:200%; display:block; }
   border-radius: 16px;
   box-shadow: 0 18px 40px rgba(0,0,0,.15);
 }
+@media (max-width: 900px){
+  .menu-split{
+    grid-template-columns: 1fr;
+  }
+}
 

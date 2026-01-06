@@ -559,7 +559,7 @@ img{ max-width:200%; display:block; }
 .menuThumb{
   position: relative;
   display: block;
-  max-width: 520px;     /* taille “petit” sur desktop */
+  max-width: 360px;     /* taille “petit” sur desktop */
   margin-left: auto;    /* aligné à droite si tu es en colonne droite */
   border-radius: 18px;
   overflow: hidden;
